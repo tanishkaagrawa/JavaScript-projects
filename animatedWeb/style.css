@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    line-height: 8.5vw;
+}
+.page1 h1 i{
+    color: green;
+    border-radius: 50%;
+    height: 8vw;
+    width: 8vw;
+}
+.page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+.page1-something{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.page1-something h4{
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-transform: lowercase;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+nav{
+    height: 11vh;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 999;
+}
+.nav-items h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8vw;
+    margin-bottom: 1vw;
+
+}
+.nav-items h5 {
+    margin-bottom: 0.6vw;
+    opacity: 0;
+}
+.nav-items h5 span{
+    font-size: 0.74vw;
+    font-weight: 400;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-bottom{
+    position: absolute;
+    height: 0;
+    transition: all ease 0.85s;
+    width: 79%;
+    bottom: 0%;
+    border-bottom: 1px solid white;
+}
+nav:hover .nav-bottom{
+    bottom: -190%;
+    height: 190%;
+    background-color: #111;
+    opacity: 1;
+}
+
+
+nav button{
+    background-color: forestgreen;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    padding: 13px 23px;
+    font-size: 0.85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}

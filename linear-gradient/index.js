@@ -28,10 +28,10 @@ const handleButton1 = () =>{
 const handleButton2 = () =>{
     rgb2 = hexValues();
     console.log(rgb2);
-    btn2.innerText = rgb2;
     document.body.style.backgroundImage = `linear-gradient(to right , ${rgb1}, ${rgb2} )`;
     copyCode.innerHTML = `background-image : Linear-gradient(to right , ${rgb1} ,  ${rgb2})`;
     btn2.style.background = rgb2;
+    btn2.innerText = rgb2;
 
 };
 
